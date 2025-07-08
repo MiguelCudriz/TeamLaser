@@ -1,0 +1,71 @@
+/*
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+*/
+
+/* Animación de entrada general */
+body.is-preload * {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.8s ease-in-out;
+}
+
+body:not(.is-preload) * {
+	opacity: 1;
+	transform: none;
+}
+
+/* Banner */
+#banner h2 {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+}
+
+#banner h2:before,
+#banner h2:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: width 1s ease-in-out;
+}
+
+#banner h2:before {
+	left: 0;
+}
+#banner h2:after {
+	right: 0;
+}
+
+body:not(.is-preload) #banner h2:before,
+body:not(.is-preload) #banner h2:after {
+	width: 100%;
+}
+
+#banner .more {
+	display: inline-block;
+	transition: all 0.8s ease;
+}
+
+body.is-preload #banner:after {
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+/* Galería */
+.image.fit {
+	transition: transform 0.5s ease, opacity 0.8s ease;
+}
+
+.image.fit:hover {
+	transform: scale(1.03);
+	opacity: 0.95;
+}
+
+/* Transición de secciones */
+.wrapper.style5 .inner {
+	transition: all 0.8s ease;
+}
