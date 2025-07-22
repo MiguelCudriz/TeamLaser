@@ -225,7 +225,7 @@ body.is-preload #banner:after {
 	padding: 5em 0 10em 0;
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url("../../images/Banner Corte Laser.png");
+		url("../../images/Banner\ Corte\ Laser.webp");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -290,3 +290,91 @@ body.is-preload #banner:after {
 	body.is-mobile #main > header {
 		background-attachment: scroll;
 	}
+
+
+    #banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 500px;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+#banner .inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+/* Tamaños base */
+#banner .titulo-especial {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+#banner .titulo-especial + .titulo-especial {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+/* ✅ Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  #banner {
+    height: 80vh;
+    min-height: 400px;
+  }
+
+  #banner .inner {
+    padding: 1rem;
+  }
+
+  #banner .titulo-especial {
+    font-size: 1.8rem;
+  }
+
+  #banner .titulo-especial + .titulo-especial {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner {
+    height: 70vh;
+    min-height: 350px;
+  }
+
+  #banner .titulo-especial {
+    font-size: 1.5rem;
+  }
+
+  #banner .titulo-especial + .titulo-especial {
+    font-size: 1rem;
+  }
+}

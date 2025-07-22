@@ -415,53 +415,68 @@
   padding: 0.5em;
 }
 
-/* RESPONSIVE AJUSTADO HASTA 1024px */
+/* GENERAL - REMOVER EFECTOS VISUALES NO DESEADOS */
+#header a,
+#header a:focus,
+#header a:active {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* RESPONSIVE HASTA 1024px */
 @media screen and (max-width: 1024px) {
+  #header {
+    padding: 0.6em 1em;
+  }
+
   .header-inner {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 1em;
     gap: 1em;
   }
 
   .branding {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .nav-style {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-top: 0.3em;
+    justify-content: flex-start;
+    gap: 8px;
+    width: auto;
   }
 
   .logo {
     height: 3.5em;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .nav-style {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.3em;
   }
 
   .menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  box-shadow: none;
-}
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.3em;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+  }
 
-
-.menu-toggle:focus,
-.menu-toggle:active {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
+  .menu-toggle:focus,
+  .menu-toggle:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
 
   #nav-horizontal .nav-links {
     flex-direction: column;
@@ -485,6 +500,54 @@
     font-size: 1.1rem;
   }
 }
+
+/* OPTIMIZACIÓN EXTRA PARA PANTALLAS PEQUEÑAS (HASTA 768px) */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 12em;
+    height: auto;
+  }
+
+  .nav-style {
+    font-size: 1.1rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   #header {

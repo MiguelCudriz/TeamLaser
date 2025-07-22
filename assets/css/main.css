@@ -1801,3 +1801,15 @@ pre code {
 
 	}
 
+
+/* Tipografias Globales*/
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, strong {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.titulo-especial {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+

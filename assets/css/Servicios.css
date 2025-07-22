@@ -1,0 +1,88 @@
+/* === SERVICIOS - ESTILOS GENERALES === */
+.servicios-destacados {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-item img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.servicio-item p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Inversión de imagen y texto */
+.servicio-item.invertido {
+  flex-direction: row-reverse;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .servicio-item,
+  .servicio-item.invertido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicio-item img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .servicio-item p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Estilo para el texto dentro de cada tarjeta */
+.card, .tarjeta, .card-content {
+  font-family: 'Orbitron', sans-serif; /* o usa 'Space Age' si lo prefieres */
+  font-size: 1rem;
+  color: #000000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Mejora el contraste */
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  padding: 1em;
+  background-color: rgba(20, 20, 20, 0.85); /* fondo oscuro semitransparente */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover atractivo */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.4);
+}
