@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
+  <title>Galeria - Team Laser</title>
+  <meta name="description" content="Especialistas en corte y grabado láser en Bogotá. Soluciones personalizadas, alta calidad y atención rápida. Contáctanos ya.">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>Galeria - Team Laser</title>
+  
 
   <!-- Favicon e íconos -->
   <link rel="icon" href="assets/img/IconoPestaña.png" type="image/png">
@@ -24,7 +26,7 @@
   <link rel="stylesheet" href="assets/css/CartaFinal.css" />
   <link rel="stylesheet" href="assets/css/CartasCuerpo.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
-  <link rel="stylesheet" href="assets/css/Iconos&Img.css" />
+  <link rel="stylesheet" href="assets/css/iconos_img.css" />
   <link rel="stylesheet" href="assets/css/Servicios.css" />
 
   <!-- Tipografía personalizada -->
@@ -42,14 +44,14 @@
 <body class="landing is-preload">
   <div id="page-wrapper">
 
-    <!-- Header -->
+     <!-- HEADER embebido directamente -->
     <header id="header">
       <div class="header-inner">
         <div class="branding">
-          <a href="TeamLaser.html" class="nav-link">
-            <img src="assets/img/logo.webp" alt="Logo Team Laser" class="logo" width="100" height="auto" loading="lazy" />
+          <a href="index.html" class="nav-link">
+            <img src="assets/img/logo.webp" alt="Logo Team Laser" class="logo" loading="lazy">
           </a>
-          <a href="TeamLaser.html" class="nav-style">Team Laser</a>
+          <a href="index.html" class="nav-style">Team Laser</a>
         </div>
 
         <button class="menu-toggle" onclick="toggleMenu()">
@@ -58,7 +60,7 @@
 
         <nav id="nav-horizontal">
           <ul class="nav-links">
-            <li><a href="TeamLaser.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="Galeria.html">Galería</a></li>
             <li><a href="Sobre_Nosotros.html">¿Quiénes somos?</a></li>
           </ul>
@@ -130,42 +132,43 @@
 
   <div class="servicios-destacados">
   <div class="servicio-item">
-    <img src="images/DESCRIPCIONES/1servicio.webp" alt="Avisos 3D" loading="lazy" />
+    <img src="images/descripciones/1servicio.webp" alt="Avisos 3D" loading="lazy" />
     <p>Fabricamos avisos personalizados en 3D con luz indirecta. Utilizamos materiales variados para lograr efectos visuales atractivos y profesionales, ideales para negocios, eventos y decoración moderna.</p>
   </div>
 
   <div class="servicio-item invertido">
-    <img src="images/DESCRIPCIONES/2servicio.webp" alt="Bolígrafos personalizados" loading="lazy" />
+    <img src="images/descripciones/2servicio.webp" alt="Bolígrafos personalizados" loading="lazy" />
     <p>Diseñamos bolígrafos promocionales personalizados con acabados creativos, ideales como material P.O.P. para reforzar tu marca de forma llamativa y profesional.</p>
   </div>
 
   <div class="servicio-item">
-    <img src="images/DESCRIPCIONES/5servicio.webp" alt="Grabado en cuero" loading="lazy" />
+    <img src="images/descripciones/5servicio.webp" alt="Grabado en cuero" loading="lazy" />
     <p>Personalizamos productos de cuero como billeteras y agendas con grabado láser de alta precisión. Un detalle elegante y duradero para regalos corporativos o personales.</p>
   </div>
 
   <div class="servicio-item invertido">
-    <img src="images/DESCRIPCIONES/4servicio.webp" alt="Grabado en madera" loading="lazy" />
+    <img src="images/descripciones/4servicio.webp" alt="Grabado en madera" loading="lazy" />
     <p>Realizamos grabados láser en madera con diseños únicos y moldes personalizados. Ideal para piezas decorativas o funcionales con un toque artesanal.</p>
   </div>
 
   <div class="servicio-item">
-    <img src="images/DESCRIPCIONES/3servicio.webp" alt="Vinilos personalizados" loading="lazy" />
+    <img src="images/descripciones/3servicio.webp" alt="Vinilos personalizados" loading="lazy" />
     <p>Transformamos tus ideas en vinilos personalizados para regalos o decoración. Ofrecemos atención creativa para adaptarnos a cada cliente y lograr resultados originales.</p>
-  </div>
-
-<div class="servicio-item">
-    <img src="images/DESCRIPCIONES/7servicio.webp" alt="Grabado en metal" loading="lazy" />
-    <p>Realizamos corte y grabado láser en metal para placas, moldes, piezas decorativas y proyectos industriales. Alta precisión, personalización y durabilidad garantizada.</p>
   </div>
   
   <div class="servicio-item invertido">
-    <img src="images/DESCRIPCIONES/6servicio.webp" alt="Vinilos impresos" loading="lazy" />
+    <img src="images/descripciones/6servicio.webp" alt="Vinilos impresos" loading="lazy" />
     <p>Imprimimos vinilos en alta calidad para señalización, decoración o campañas publicitarias. Diseños personalizados que se ajustan a tus necesidades visuales.</p>
   </div>
 
-</div>
+<div class="servicio-item">
+    <img src="images/descripciones/7servicio.webp" alt="Grabado en metal" loading="lazy" />
+    <p>Realizamos corte y grabado láser en metal para placas, moldes, piezas decorativas y proyectos industriales. Alta precisión, personalización y durabilidad garantizada.</p>
+  </div>
+  
+  
 
+</div>
       </section>
     </article>
 
@@ -180,13 +183,41 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/header&footer.js"></script>
-  <script src="assets/js/socialLinks.js"></script>
+  <script src="assets/js/header_footer.js"></script>
   <script>
     function toggleMenu() {
       const nav = document.querySelector('#nav-horizontal .nav-links');
       nav.classList.toggle('active');
     }
   </script>
+  <script>
+  function isMobile() {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+function openInstagram() {
+  if (isMobile()) {
+    // Intenta abrir la app de Instagram
+    window.location.href = "instagram://user?username=teamlaser17";
+    setTimeout(() => {
+      window.location.href = "https://www.instagram.com/teamlaser17/";
+    }, 1000);
+  } else {
+    window.open("https://www.instagram.com/teamlaser17/", "_blank");
+  }
+}
+
+function openFacebook() {
+  if (isMobile()) {
+    // Reemplaza este ID por el real de tu página si quieres que abra directo en app
+    window.location.href = "fb://page/104681882235347";
+    setTimeout(() => {
+      window.location.href = "https://www.facebook.com/teamlaser17/photos";
+    }, 1000);
+  } else {
+    window.open("https://www.facebook.com/teamlaser17/photos", "_blank");
+  }
+}
+</script>
 </body>
 </html>
