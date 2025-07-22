@@ -1,81 +1,74 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Galería - Team Laser</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Team Laser</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-	<!-- Estilos principales -->
-<link rel="icon" href="assets/img/Diseño sin título.png" type="image/png">
+  <!-- Íconos pestaña -->
+  <link rel="icon" href="assets/img/IconoPestaña.png" type="image/png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Team Laser" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
-<!-- Estilos Textos -->
-<style>
-  @font-face {
-    font-family: 'Space Age';
-    src: url('assets/webfonts/space-age.ttf') format('truetype');
-  }
+  <!-- Tipografía personalizada -->
+  <style>
+    @font-face {
+      font-family: 'Space Age';
+      src: url('assets/webfonts/space-age.ttf') format('truetype');
+    }
+    .titulo-especial {
+      font-family: 'Space Age', sans-serif;
+    }
+  </style>
 
-  .titulo-especial {
-    font-family: 'Space Age', sans-serif;
-  }
-</style>
+  <!-- CSS general -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<!-- Hojas de estilo generales -->
-<link rel="stylesheet" href="assets/css/main.css" />
-<noscript>
-  <link rel="stylesheet" href="assets/css/noscript.css" />
-</noscript>
-
-
-<!-- Estilos Icono Pestaña -->
-<link rel="icon" href="assets/img/IconoPestaña.png" type="image/png">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Team Laser" />
-<link rel="manifest" href="/site.webmanifest" />
-
-
-<!-- Hojas de estilo por secciones -->
-<link rel="stylesheet" href="assets/css/header.css" />
-<link rel="stylesheet" href="assets/css/Banners.css" />
-<link rel="stylesheet" href="assets/css/Botones.css" />
-<link rel="stylesheet" href="assets/css/CartaFinal.css" />
-<link rel="stylesheet" href="assets/css/CartasCuerpo.css" />
-<link rel="stylesheet" href="assets/css/footer.css" />
-<link rel="stylesheet" href="assets/css/Iconos&Img.css" />
-
+  <!-- CSS por secciones -->
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/Banners.css" />
+  <link rel="stylesheet" href="assets/css/Botones.css" />
+  <link rel="stylesheet" href="assets/css/CartaFinal.css" />
+  <link rel="stylesheet" href="assets/css/CartasCuerpo.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/Iconos&Img.css" />
 </head>
 
-<body class="is-preload">
+<body class="landing is-preload">
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div id="page-wrapper">
 
-	<!-- CONTENEDOR PRINCIPAL -->
-	<div id="page-wrapper">
+    <!-- HEADER embebido directamente -->
+    <header id="header">
+      <div class="header-inner">
+        <div class="branding">
+          <a href="index.html" class="nav-link">
+              <img src="assets/img/Logo.png" alt="Logo Team Laser" class="logo">
+           
+          </a>
+          <a href="index.html" class="nav-style">Team Laser</a>
+        </div>
 
-		<!-- HEADER embebido -->
-<header id="header">
-  <div class="header-inner">
-    <div class="branding">
-      <a href="index.html" class="nav-link">
-        <img src="assets/img/logo.png" alt="Logo Team Laser" class="logo" />
-      </a>
-      <a href="index.html" class="nav-style">Team Laser</a>
-    </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
 
-    <button class="menu-toggle" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </button>
+        <nav id="nav-horizontal">
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Galeria.html">Galería</a></li>
+            <li><a href="About.html">¿Quiénes somos?</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <nav id="nav-horizontal">
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Galeria.html">Galería</a></li>
-        <li><a href="About.html">¿Quiénes somos?</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
 		<!-- CONTENIDO PRINCIPAL -->
 <article id="main">
@@ -110,10 +103,10 @@
 					<!-- Botones de redes sociales -->
 <div style="text-align: center; margin-bottom: 30px;">
   <a href="https://www.instagram.com/teamlaser17/" target="_blank" class="social-button">
-    <img src="assets/img/instagram.png" alt="Instagram" style="width: 100px; height: 100px; margin: 0 10px; transition: transform 0.3s ease;" />
+    <img src="assets/img/instagram.png" alt="Instagram" loading="lazy" style="width: 100px; height: 100px; margin: 0 10px; transition: transform 0.3s ease;" />
   </a>
   <a href="https://www.facebook.com/teamlaser17/photos" target="_blank" class="social-button">
-    <img src="assets/img/Facebook.png" alt="Facebook" style="width: 100px; height: 100px; margin: 0 10px; transition: transform 0.3s ease;" />
+    <img src="assets/img/Facebook.png" alt="Facebook" loading="lazy" style="width: 100px; height: 100px; margin: 0 10px; transition: transform 0.3s ease;" />
   </a>
 </div>
 
@@ -121,16 +114,16 @@
 						<div class="row gtr-50 gtr-uniform">
 							<!-- Galería de imágenes: ajusta las rutas o cambia imágenes reales -->
 							
-							<div class="col-4"><span class="image fit"><img src="images/UNO.jpg" alt="Trabajo 1" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/DOS.jpg" alt="Trabajo 2" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/TRES.jpg" alt="Trabajo 3" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/CUATRO.jpg" alt="Trabajo 4" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/CINCO.jpg" alt="Trabajo 5" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/SEIS.jpg" alt="Trabajo 6" style="border-radius: 8px;"/></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/SIETE.jpg" alt="Trabajo 7" style="border-radius: 8px;" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/OCHO.jpg" alt="Trabajo 8" style="border-radius: 8px;" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/NUEVE.jpg" alt="Trabajo 9" style="border-radius: 8px;" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/DIEZ.jpeg" alt="Trabajo 10" style="border-radius: 8px;" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/UNO.jpg" alt="Trabajo 1" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/DOS.jpg" alt="Trabajo 2" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/TRES.jpg" alt="Trabajo 3" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/CUATRO.jpg" alt="Trabajo 4" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/CINCO.jpg" alt="Trabajo 5" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/SEIS.jpg" alt="Trabajo 6" loading="lazy" style="border-radius: 8px;"/></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/SIETE.jpg" alt="Trabajo 7" loading="lazy" style="border-radius: 8px;" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/OCHO.jpg" alt="Trabajo 8" loading="lazy" style="border-radius: 8px;" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/NUEVE.jpg" alt="Trabajo 9" loading="lazy" style="border-radius: 8px;" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/DIEZ.jpeg" alt="Trabajo 10" loading="lazy" style="border-radius: 8px;" /></span></div>
 							<div class="col-4">
   							<span class="image fit">
   <video 
@@ -160,42 +153,42 @@
 
 	<!-- Servicio 7 -->
 <div class="servicio-item" style="display: flex; align-items: center; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/7servicio.jpg" alt="Grabado en metal" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/7servicio.jpg" alt="Grabado en metal" loading="lazy" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
   <p>Ofrecemos corte y grabado láser en láminas metálicas, permitiendo la creación de moldes, placas o elementos decorativos totalmente personalizados para diferentes usos industriales o artísticos.</p>
 </div>
 
 <!-- Servicio 6 -->
 <div class="servicio-item" style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/6servicio.jpg" alt="Vinilos impresos" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/6servicio.jpg" alt="Vinilos impresos" loading="lazy" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
   <p>Imprimimos vinilos personalizados en alta calidad, ideales para decoración, señalización o promociones. Adaptamos cada diseño según tus ideas y necesidades.</p>
 </div>
 
 <!-- Servicio 3 -->
 <div class="servicio-item" style="display: flex; align-items: center; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/3servicio.jpg" alt="Vinilos personalizados" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/3servicio.jpg" alt="Vinilos personalizados" loading="lazy" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
   <p>Trabajamos detalladamente tus ídeas con atencion personalizada para asi adaptarnos a la necesidad de nuestros clíentes, con ello elaborando retratos y recordatorios perfectos para regalar o ambientar tus espacios con un toque moderno y original.</p>
 </div>
 
 <!-- Servicio 4 -->
 <div class="servicio-item" style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/4servicio.jpg" alt="Grabado en madera" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/4servicio.jpg" alt="Grabado en madera" loading="lazy" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
   <p>Realizamos grabados láser en madera, creando piezas únicas, decorativas o funcionales a partir de diseños personalizados y moldes exclusivos.</p>
 </div>
 
 <!-- Servicio 5 -->
 <div class="servicio-item" style="display: flex; align-items: center; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/5servicio.jpg" alt="Grabado en cuero" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/5servicio.jpg" alt="Grabado en cuero" loading="lazy" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
   <p>Personalizamos productos de cuero como billeteras, agendas y accesorios mediante grabado láser de alta precisión, logrando un acabado profesional y duradero para regalos o identidad corporativa.</p>
 </div>
 
 <!-- Servicio 2 -->
 <div class="servicio-item" style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/2servicio.jpg" alt="Bolígrafos personalizados" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/2servicio.jpg" alt="Bolígrafos personalizados" loading="lazy" style="width: 200px; margin-left: 20px; border-radius: 8px;" />
   <p>Ofrecemos personalización de bolígrafos promocionales para material P.O.P., con diseños únicos y creativos que refuerzan tu marca o mensaje publicitario de forma profesional y llamativa.</p>
 </div>
   <!-- Servicio 1 -->
 <div class="servicio-item" style="display: flex; align-items: center; margin-bottom: 30px;">
-  <img src="images/DESCRIPCIONES/1servicio.jpg" alt="Avisos 3D" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
+  <img src="images/DESCRIPCIONES/1servicio.jpg" alt="Avisos 3D" loading="lazy" style="width: 200px; margin-right: 20px; border-radius: 8px;" />
   <p>Diseñamos y fabricamos avisos personalizados con letras en 3D y luz indirecta. Utilizamos diversos materiales para lograr efectos visuales impactantes, ideales para negocios, eventos o decoraciones especiales.</p>
 </div>
 
